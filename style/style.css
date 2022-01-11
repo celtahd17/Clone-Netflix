@@ -1,0 +1,109 @@
+:root{
+    --vermelha: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*limete da caixa*/
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+/* configuração header*/
+
+header .container{
+    display: flex; /*flex-box alinhamento a linha*/
+    flex-direction: row;
+    align-items: center;/*alinhando elementos ao centro*/
+    justify-content: space-between; /*espaço entre logo e links*/
+    margin-right: 90px;
+}
+
+header .logo{
+    height: 100px;
+    cursor: pointer;
+}
+
+header nav a{
+    text-decoration: none;/*removendo linhas de link*/
+    color: whitesmoke;
+    margin-right: 10px;
+}
+/*evento, que quando passa o mouse em cima do link se muda a cor*/
+header nav a:hover{
+    color: var(--vermelha);
+}
+
+/*configuração filme/série principal*/
+/*linear-gradient da o efeito de transparencia com tom de preto*/
+.principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/capatheWitcher.jpg);
+    
+    height: 500px; /* tamanho da caixa*/
+    background-size: cover;/*img ocupando todo o tamanho da caixa*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.principal .descricao{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.principal .titulo{
+    margin-top: 5%;
+    font-size: 50px;
+}
+
+body main .principal .botoes button:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+
+body main .principal .container i:hover{
+    color: var(--vermelha);
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: whitesmoke;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 2s ease all;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+/*carousel*/
+
+.box-carousel{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel{
+    margin-top: 5px;
+}
+
+.rodape{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

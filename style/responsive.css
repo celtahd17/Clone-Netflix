@@ -1,0 +1,13 @@
+@media  screen and (max-width: 500px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    main .principal .container .descricao{
+        width: 50%;
+    }
+}
